@@ -142,7 +142,7 @@ section:nth-child(even){
 
 @media screen and (max-width:768px){
     .container{
-
+        position: relative;
         height: 100%;
         margin:0 auto;
         padding:0 20px;
@@ -209,7 +209,25 @@ section:nth-child(even){
 
 
     .nav-bar{
-        display: none;
+        position: absolute;
+        top:80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #2980b9;
+        /* display: none; */
+    }
+
+    .nav-bar ul{
+        
+        grid-auto-flow: row;
+        grid-gap: 80px; 
+        justify-content: center;
+    
+    }
+
+    .nav-bar li{
+        text-align: center;
     }
 
 
