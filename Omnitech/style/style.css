@@ -138,3 +138,81 @@ section:nth-child(even){
     background-color: #b7d5eb;
 
 }
+
+
+@media screen and (max-width:768px){
+    .container{
+
+        height: 100%;
+        margin:0 auto;
+        padding:0 20px;
+        grid-template-areas: "lgo ... mnu";
+        align-content: center;
+    
+    
+    }
+
+    .menu{
+        grid-area: mnu;
+        display: grid;
+        align-content: center;
+
+
+    }
+
+    .hamburguer{
+        width: 28px;
+        height: 3px;
+        background-color: #c5eff7;
+        position: relative;
+
+    }
+
+    .hamburguer::before{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+        position: absolute;
+        top:-8px ;
+        left:0 ;
+    }
+
+    .hamburguer::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+
+    .max-logo img{
+        width: 220px;
+    }
+    
+    .min-logo img{
+        width: 180px;
+    }
+
+
+    .max-header{
+        
+        height:80px; 
+        
+    }
+    
+    .min-header{
+        height: 60px;
+    }
+
+
+    .nav-bar{
+        display: none;
+    }
+
+
+
+
+}
