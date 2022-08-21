@@ -215,7 +215,13 @@ section:nth-child(even){
         width: 100%;
         height: calc(100vh - 80px);
         background-color: #2980b9;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-in-out;
         /* display: none; */
+    }
+
+    .menu-opened{
+        transform: translateX(0);
     }
 
     .nav-bar ul{
@@ -229,6 +235,8 @@ section:nth-child(even){
     .nav-bar li{
         text-align: center;
     }
+
+
 
 
 
