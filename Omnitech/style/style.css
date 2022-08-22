@@ -30,6 +30,7 @@ header{
 
 .logo svg{
     transition: all 0.4s ease-out;
+    fill-opacity: 0;
 }
 
 
