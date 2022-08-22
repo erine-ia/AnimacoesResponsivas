@@ -28,7 +28,7 @@ header{
     
 }
 
-.logo img{
+.logo svg{
     transition: all 0.4s ease-out;
 }
 
@@ -67,12 +67,14 @@ header{
     grid-area: lgo;
 }
 
-.max-logo img{
+.max-logo svg{
     width: 320px;
+    fill:#c5eff7 ;
 }
 
-.min-logo img{
+.min-logo svg{
     width: 250px;
+    fill: #2574a9;
 }
 
 
@@ -225,11 +227,11 @@ section:nth-child(even){
         transition: all 0.4s ease-out;
     }
 
-    .max-logo img{
+    .max-logo svg{
         width: 220px;
     }
     
-    .min-logo img{
+    .min-logo svg{
         width: 180px;
     }
 
